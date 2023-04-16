@@ -58,10 +58,15 @@ if (numberS == "y") {const ranNum = Math.floor(Math.random() * 10)
   megaArray.push(numberSet)}
 else {console.log("numbers denied")}
 
+let  (unpassword.length -1) === numChar { 
+  for (let i = unpassword.length; i < numChar.length; i++){
+  const ranChar =Math.floor(Math.Random() * numChar.length)
+  unpassword.push(megaArray)}}
+console.log(unpassword);
 
-console.log (megaArray);
+ 
+console.log (unpassword);}
 
-console.log (unpassword);
 
 
 
