@@ -37,7 +37,8 @@ console.log(numChar2.length)
   if (Uppercase == "y") {
     const ranUp = Math.floor(Math.random() * 26)
     unpassword.push(charaSet2[ranUp]);
-    megaArray.push(charaSet2)
+    const rat=[];
+    var bar= rat.concat(charaSet2)
   }
 
 
@@ -53,7 +54,7 @@ let Lowercase = prompt("Do you want lower case letters(y/n)")
 if (Lowercase == "y") {
   const ranLow = Math.floor(Math.random() * 26)
   unpassword.push(charaSet1[ranLow]);
-  megaArray.push(charaSet1)
+  var measure = bar.concat(charaSet1);
 }
 
 else if (Lowercase == "n") { console.log("lowercase letters denied") }
@@ -67,7 +68,7 @@ let numberS = prompt("Do you want numbers in this password?(y/n)")
 if (numberS == "y") {
   const ranNum = Math.floor(Math.random() * 10)
   unpassword.push(numberSet[ranNum]);
-  megaArray.push(numberSet)
+  var megaArray= measure.concat(numberSet)
 } else if (numberS == "n") { console.log("numbers denied") 
 
 }else { alert ("That is an invalid selection") }
@@ -83,20 +84,17 @@ if (megaArray.length <= numberS.length)
   
   for (var i = unpassword.length; i < numChar2.length; i++){
 
- const ranVal = [Math.floor(Math.random() * megaArray.length)];
- const ranVal2 = [Math.floor(Math.random() * ranVal.length)];
+ let  reVal = Math.floor(Math.random() * megaArray.length);
+ 
+ const middle = []
+ middle.push(reVal)
+ middle[Math.floor(Math.random() * reVal.length)]
+ console.log(middle)}
+console.log(unpassword)
 
-  unpassword.push(ranVal[ranVal2])} 
+ return 
+  }
 
-console.log(unpassword);
-return 
-}
-
-
-
-
-
-console.log(unpassword);
 
 
 
